@@ -1,0 +1,35 @@
+version: "3.2"
+services:
+  php:
+    build: './php/'
+    networks:
+      - backend
+    volumes:
+      - ./geoipme.10/:/var/www/html/
+  apache:
+    build: './apache/'
+    depends_on:
+      - php
+      - mysql
+    networks:
+      - frontend
+      - backend
+    ports:
+      - "5005:80"
+    volumes:
+      - ./geoipme.10/:/var/www/html/
+  mysql:
+    build: './mysql/'
+    networks:
+      - backend
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - "3308:3306"
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_DATABASE= GeoIP
+      - MYSQL_USER= root
+networks:
+  frontend:
+  backend:

@@ -1,0 +1,175 @@
+
+@media (min-width: 1200px)
+{
+	.container {
+	    max-width: 1440px;
+	}
+}
+
+@media (max-width: 768px)
+{
+	.tab-content .left {
+	    margin-bottom: 40px;
+	}
+
+	.tab-content .right {
+		overflow: hidden;
+	}
+
+	.tab-content .right .table td, 
+	.tab-content .right .table th {
+    	padding: 5px 10px;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 768px)
+{
+	.tab-content .col-md-6 {
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+
+	.tab-content .left {
+	    margin-bottom: 40px;
+	}
+
+	.tab-content .right .table td, 
+	.tab-content .right .table th {
+    	padding: 5px 10px;
+	}
+}
+
+.container-fluid {
+	background: #fff url(../img/background.png) center center;
+	background-size: 100%;
+	padding-top: 60px;
+}
+
+.container .tab-content {
+	background: #fff;
+	padding: 30px;
+}
+
+.nav {
+	display: block!important;
+}
+
+.nav-tabs > li {
+    float: none;
+    display: inline-block;
+    zoom: 1;
+}
+
+.nav-tabs {
+    text-align: center;
+    margin-top: 50px;
+    border-color: #fff;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: 0px;
+}
+
+.nav-link {
+    padding: .5rem 2.5rem;
+    font-size: 14px;
+}
+
+.nav-tabs .nav-link {
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    background-color: #3C5654;
+    color: #E0E0E0;
+}
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+    color: #45ACF0;
+    border-color: #fff;
+}
+
+.form-control.form-rounded {
+    border-radius: 0rem 2rem 2rem 0rem;
+    padding-right: 50px;
+    height: 60px;
+    font-size: 14px;    
+    border-color: #fff;
+}
+
+.btn.form-rounded {
+    background: #fff;
+    border-radius: 2rem 0rem 0rem 2rem;
+    border-color: #fff;
+    margin: 0px;
+    height: 60px;
+    font-size: 14px;
+    color: #909090;
+    padding: 0px 10px 0px 50px;
+}
+
+#searchResults {
+	margin-top: 20px;
+}
+
+#resultsContent {
+    min-height: 525px;
+}
+
+#results div p, #searchResults div p {
+	margin: 0px;
+	color: #B0B0B0;
+	font-size: 14px;
+}
+
+#results p.sectionTitle {
+	color: #45ACF0;
+}
+
+#searchResults > div {
+	margin-bottom: 30px;
+    color: #45ACF0;
+}
+
+#searchResults h5 {
+    font-size: 1.2rem;
+	font-weight: normal;
+}
+
+.table, p.noData {
+    margin-top: 15px;
+}
+
+.table thead th {
+    border: none;
+	background: #FAFBFB;
+}
+
+.table tr {
+	background: #FAFBFB;
+}
+
+.table td, .table th {
+    border-top: 7px solid #fff;
+	color: #B0B0B0;
+	font-size: 14px;
+	padding: 10px 20px;
+    vertical-align: middle;
+}
+
+.table a {
+    color: #45ACF0;
+    font-weight: normal;
+}
+
+.alert.alert-danger {
+	padding: 5px 10px;
+    position: absolute;
+    top: 65px;
+}
+
+.alert.alert-danger p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+} 
+
